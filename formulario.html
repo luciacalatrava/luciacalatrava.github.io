@@ -1,30 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulario</title>
-    <link rel="stylesheet" href="/Paginaweb.css" />
-    <link rel="shortcut icon" href="./Paginaprincipal.png" />
-  </head>
-  <body>
-    <header class="cabezera"></header>
-    <main class="contenido">
-      <h1></h1>
-      <div>
-        <p></p>
-      </div>
-    </main>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="./todocss.css" />
+</head>
+
+<body>
+    <h1>Formulario</h1>
     <div class="menu">
-      <a href="./index.html">Pagina Principal</a><br>
-      <a href="./curriculum.html">Curriculum</a><br>
-      <a href="./formulario.html">Formulario</a><br>
-      <a href="./sobreelproyecto.html">Sobre el proyecto</a>
+        <div class="menu-elementos"><a href="./index.html">Home</a></div>
+        <div class="menu-elementos"><a href="./formulario.html">Formulario</a></div>
+        <div class="menu-elementos"><a href="./curriculum.html">Curriculum</a></div>
+        <div class="menu-elementos"><a href="./sobreelproyecto.html">Video</a></div>
     </div>
-    <footer class="pie">
-      Correo electronico: lucia_calatrava@hotmail.com <br />
-      Instagram: @luciicm32
-    </footer>
-  </body>
+    <div id="formulario">
+        <form name="registro" method="post">
+            <table>
+                <tr class="valor">
+                    <td class="centradocolor" colspan="2">Registro Trabajadores</td>
+                </tr>
+                <tr class="valor">
+                    <td class="descripcion">DNI:</td>
+                    <td><input type="text" name="txtRut"></td>
+                </tr>
+                <tr class="valor">
+                    <td class="descripcion">Nombre:</td>
+                    <td><input type="text" name="txtNombre"></td>
+                </tr>
+                <tr class="valor">
+                    <td class="descripcion">Primer Apellido:</td>
+                    <td><input type="text" name="txtPA"></td>
+                </tr>
+                <tr class="valor">
+                    <td class="descripcion">Segundo Apellido:</td>
+                    <td><input type="text" name="txtSA"></td>
+                </tr>
+                <tr class="valor">
+                    <td class="descripcion">Fecha de Nacimiento:</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr class="valor">
+                    <td class="descripcion">Sexo:</td>
+                    <td><input type="radio" name="opSexo" value="m">Masculino
+                        <input type="radio" name="opSexo" value="f">Femenino
+                    </td>
+                </tr>
+                <tr class="valor">
+                    <td class="descripcion">Nivel de Estudios:</td>
+                    <td><input type="checkbox" name="opEstudios" value="1">No tiene <br>
+                        <input type="checkbox" name="opEstudios" value="2">Educación Secundaria Obligatoria<br>
+                        <input type="checkbox" name="opEstudios" value="3">Formación Profesional (Grado Medio)<br>
+                        <input type="checkbox" name="opEstudios" value="4">Formación Profesional (Grado Superior)<br>
+                        <input type="checkbox" name="opEstudios" value="5">Universitario<br>
+                    </td>
+                </tr>
+                <tr class="valor">
+                    <td class="descripcion">Ciudad de Nacimiento:</td>
+                    <td><select name="cboCiudad" id="">
+              <option value="1"></option>
+              <option value="2">Madrid</option>
+              <option value="3">Guadalajara</option>
+              <option value="4">Valencia</option>
+            </select></td>
+                </tr>
+                <tr class="valor">
+                    <td class="descripcion">Curriculum Vitae:</td>
+                    <td><input type="file" name="curriculum"></td>
+                </tr>
+                <tr class="valor">
+                    <td class="descripcion">Foto:</td>
+                    <td><input type="file" name="foto"></td>
+                </tr>
+                <tr class="valor">
+                    <td class="centradocolor" colspan="2"><input type="submit" name="btnRegistrar" value="Registrar Trabajador"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="menu-elementos"><a href="https://www.instagram.com/?hl=es">Instagram</a></div>
+        <div class="menu-elementos"><a href="https://outlook.live.com/owa/">Hotmail</a></div>
+        <div class="menu-elementos"><a href="https://www.youtube.com/">Youtube</a></div>
+    </div>
+</body>
+
 </html>
