@@ -2,58 +2,82 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Curriculum Vitae</title>
-    <link rel="stylesheet" type="text/css" href="./todocss.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title>
+    <link rel="stylesheet" href="./estilos/estilos.css">
 </head>
 
-<body class="cv">
-    <h1>Curriculum Vitae</h1>
-    <div class="menu">
-        <div class="menu-elementos"><a href="./index.html">Home</a></div>
-        <div class="menu-elementos"><a href="./formulario.html">Formulario</a></div>
-        <div class="menu-elementos"><a href="./curriculum.html">Curriculum</a></div>
-        <div class="menu-elementos"><a href="./sobreelproyecto.html">Video</a></div>
-    </div>
-    <div class="curriculum">
-        <img src="./foto.jpg" alt="2*2">
-        <h1>Lucía Calatrava Masiá</h1>
-        <p>Calle La Haya nº7</p>
-        <p>Telefono: (+34) 657 95 08 35</p>
-        <fieldset>
-            <legend>Datos Generales</legend>
+<body>
+    <!--Encabezado-->
+    <header class="header">
+        <div class="conteiner">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./curriculum.html">Curriculum</a></li>
+                    <li><a href="./formulario.html">Formulario</a></li>
+                    <li><a href="./sobreelproyecto.html">Sobre el proyecto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Cuerpo-->
+    <main class="main">
+        <div class="curriculum-div">
+            <img class="imagen1" src="./imagenes/foto.jpg">
+            <h2>Lucía Calatrava Masiá</h2>
+            <p>Calle La Haya nº7 4ºD</p>
+            <p>Teléfono: 657 95 08 35</p>
+            <div class="div-tabla">Datos Generales</div>
             <ul>
                 <li><span>Fecha de nacimiento:</span> 13/03/2002</li>
-                <li><span>Instagram:</span> @luciicm32</li>
-                <li><span>Email:</span> lucia_calatrava@hotmail.com</li>
+                <li><span>Nacionalidad:</span> Española</li>
+                <li><span>Actualmente residiendo:</span> Torrejón de Ardoz, Madrid, España</li>
+                <li><span>Dirección de correo:</span> lucia_calatrava@hotmail.com</li>
             </ul>
-        </fieldset>
-        <fieldset>
-            <legend>Formación Académica</legend>
+            <div class="div-tabla">Formación Académica</div>
             <ul>
-                <li><span>Educación Secundaria Obligatoria:</span> IES San Juan Bosco</li>
-                <li><span>Grado Medio (1º de Sistemas Microinformaticos y Redes):</span> IES Villablanca</li>
-                <li><span>Grado Medio (2º de Sistemas Microinformaticos y Redes):</span> IES VIllablanca (Cursando)</li>
+                <li><span>Educación Secundaria Obligatoria (ESO):</span> IES San Juan Bosco</li>
+                <li><span>Sistemas Microinformáticos y Redes:</span> IES Villablanca</li>
             </ul>
-        </fieldset>
-        <fieldset>
-            <legend>Experiencia</legend>
+            <div class="div-tabla">Experiencia Laboral</div>
             <ul>
-                <li>He estado trabajando con niños menores tanto para su cuidado diario, aprandizaje y enseñanza, así como todo lo relacionado con su bienestar.</li>
+                <li><span>Cuidado de niños:</span>Particular</li>
             </ul>
-        </fieldset>
-        <fieldset>
-            <legend>Video</legend>
-            <video src=""></video>
-        </fieldset>
-    </div>
-    <div class="footer">
-        <div class="menu-elementos"><a href="https://www.instagram.com/?hl=es">Instagram</a></div>
-        <div class="menu-elementos"><a href="https://outlook.live.com/owa/">Hotmail</a></div>
-        <div class="menu-elementos"><a href="https://www.youtube.com/">Youtube</a></div>
-    </div>
+            <div class="div-tabla">Idiomas</div>
+            <ul>
+                <li><span>Español:</span> Nativo</li>
+                <li><span>Inglés:</span> Bajo</li>
+                <li><span>Francés:</span> Medio</li>
+            </ul>
+            <div class="div-tabla">Fortalezas</div>
+            <ul>
+                <li><span>Capacidad para trabajar en grupo</span></li>
+                <li><span>Perseverante</span></li>
+                <li><span>Creativa</span></li>
+                <li><span>Paciente</span></li>
+            </ul>
+            <div class="div-tabla">Video</div>
+            <ul>
+                <li><span>Video de mi canción favorita:</span></li>
+            </ul>
+            <div>
+                <video poster="./imagenes/descarga.png" controls>
+                    <source src="./videos/DJ KBZ - Méga Francesita 2017 [Remix].mp4" type="video/mp4">
+                    Su navegador no puede reproducir este formato de video
+                </video>
+            </div>
+        </div>
+    </main>
+    <!--Pie de página-->
+    <footer>
+        <div class="footer">
+            <div class="container">Contactar: lucia_calatrava@hotmail.com</div>
+            <div class="container">Redes: <a href="https://www.instagram.com/luciicm32/">Instagram </a></div>
+        </div>
+    </footer>
 </body>
 
 </html>

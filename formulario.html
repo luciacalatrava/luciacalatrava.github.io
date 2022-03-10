@@ -2,90 +2,79 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Index</title>
-    <link rel="stylesheet" type="text/css" href="./todocss.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario</title>
+  <link rel="stylesheet" href="./estilos/estilos.css" />
 </head>
 
 <body>
-    <h1>Formulario</h1>
-    <div class="menu">
-        <div class="menu-elementos"><a href="./index.html">Home</a></div>
-        <div class="menu-elementos"><a href="./formulario.html">Formulario</a></div>
-        <div class="menu-elementos"><a href="./curriculum.html">Curriculum</a></div>
-        <div class="menu-elementos"><a href="./sobreelproyecto.html">Video</a></div>
+  <!--Encabezado-->
+  <header class="header">
+    <div class="conteiner">
+      <nav class="navigation">
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./curriculum.html">Curriculum</a></li>
+          <li><a href="./formulario.html">Formulario</a></li>
+          <li><a href="./sobreelproyecto.html">Sobre el proyecto</a></li>
+        </ul>
+      </nav>
     </div>
-    <div id="formulario">
-        <form name="registro" method="post">
-            <table>
-                <tr class="valor">
-                    <td class="centradocolor" colspan="2">Registro Trabajadores</td>
-                </tr>
-                <tr class="valor">
-                    <td class="descripcion">DNI:</td>
-                    <td><input type="text" name="txtRut"></td>
-                </tr>
-                <tr class="valor">
-                    <td class="descripcion">Nombre:</td>
-                    <td><input type="text" name="txtNombre"></td>
-                </tr>
-                <tr class="valor">
-                    <td class="descripcion">Primer Apellido:</td>
-                    <td><input type="text" name="txtPA"></td>
-                </tr>
-                <tr class="valor">
-                    <td class="descripcion">Segundo Apellido:</td>
-                    <td><input type="text" name="txtSA"></td>
-                </tr>
-                <tr class="valor">
-                    <td class="descripcion">Fecha de Nacimiento:</td>
-                    <td><input type="date"></td>
-                </tr>
-                <tr class="valor">
-                    <td class="descripcion">Sexo:</td>
-                    <td><input type="radio" name="opSexo" value="m">Masculino
-                        <input type="radio" name="opSexo" value="f">Femenino
-                    </td>
-                </tr>
-                <tr class="valor">
-                    <td class="descripcion">Nivel de Estudios:</td>
-                    <td><input type="checkbox" name="opEstudios" value="1">No tiene <br>
-                        <input type="checkbox" name="opEstudios" value="2">Educación Secundaria Obligatoria<br>
-                        <input type="checkbox" name="opEstudios" value="3">Formación Profesional (Grado Medio)<br>
-                        <input type="checkbox" name="opEstudios" value="4">Formación Profesional (Grado Superior)<br>
-                        <input type="checkbox" name="opEstudios" value="5">Universitario<br>
-                    </td>
-                </tr>
-                <tr class="valor">
-                    <td class="descripcion">Ciudad de Nacimiento:</td>
-                    <td><select name="cboCiudad" id="">
-              <option value="1"></option>
-              <option value="2">Madrid</option>
-              <option value="3">Guadalajara</option>
-              <option value="4">Valencia</option>
-            </select></td>
-                </tr>
-                <tr class="valor">
-                    <td class="descripcion">Curriculum Vitae:</td>
-                    <td><input type="file" name="curriculum"></td>
-                </tr>
-                <tr class="valor">
-                    <td class="descripcion">Foto:</td>
-                    <td><input type="file" name="foto"></td>
-                </tr>
-                <tr class="valor">
-                    <td class="centradocolor" colspan="2"><input type="submit" name="btnRegistrar" value="Registrar Trabajador"></td>
-                </tr>
-            </table>
+  </header>
+  <!--Cuerpo-->
+  <main class="main">
+    <div>
+      <section class="formulario">
+        <h1>Formulario</h1>
+        <form>
+          <label for="Nombre">Nombre</label>
+          <input type="text" id="Nombre" name="Nombre" placeholder="Escriba su nombre..." /><br />
+          <label for="Apellido">Apellido</label>
+          <input type="text" id="Apellido" name="Apellido" placeholder="Escriba su primer apellido..." /><br />
+          Seleccione su género:<br />
+          <input type="radio" id="Hombre" name="sexo" value="Hombre" />
+          <label for="Hombre">Hombre</label><br />
+          <input type="radio" id="Mujer" name="sexo" value="Mujer" />
+          <label for="Mujer">Mujer</label><br />
+          Permisos de conducir necesarios (no rellenar si no es necesario):<br />
+          <input type="checkbox" id="transporte1" name="transporte1" value="coche" />
+          <label for="transporte1">Coche</label>
+          <input type="checkbox" id="transporte2" name="trasnporte2" value="moto" />
+          <label for="transporte2">Moto</label><br />
+          Indique experiencia requerida (Baja, Media, Alta)
+          <input type="range" name="rango" min="1" max="3" list="listaRango" /><br />
+          Indique horario
+          <select name="menu">
+            <option></option>
+            <option>Mañana</option>
+            <option>Tarde</option>
+            <option>Noche</option>
+          </select><br />
+          <label for="Fecha">Fecha de cita</label>
+          <input type="date" id="Fecha" name="Fecha" /><br />
+          <label for="Hora">Hora de cita</label>
+          <input type="time" id="Hora" name="Hora" /><br />
+          <label for="correo">Dirección de correo</label>
+          <input type="email" name="correo" size="30"
+            placeholder="ejemplo@gmail.com-.es/ejemplo@hotmail.com-.es" /><br />
+          <textarea name="texto" cols="30" rows="10" placeholder="Comentarios..."></textarea><br />
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Borrar" />
         </form>
+      </section>
     </div>
+  </main>
+  <!--Pie de página-->
+  <footer>
     <div class="footer">
-        <div class="menu-elementos"><a href="https://www.instagram.com/?hl=es">Instagram</a></div>
-        <div class="menu-elementos"><a href="https://outlook.live.com/owa/">Hotmail</a></div>
-        <div class="menu-elementos"><a href="https://www.youtube.com/">Youtube</a></div>
+      <div class="container">Contactar: lucia_calatrava@hotmail.com</div>
+      <div class="container">
+        Redes: <a href="https://www.instagram.com/luciicm32/">Instagram </a>
+      </div>
     </div>
+  </footer>
 </body>
 
 </html>

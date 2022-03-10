@@ -2,43 +2,43 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Video</title>
-    <link rel="stylesheet" type="text/css" href="./todocss.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SobreProyecto</title>
+    <link rel="stylesheet" href="./estilos/estilos.css">
 </head>
 
 <body>
-    <h1>Video</h1>
-    <div class="menu">
-        <div class="menu-elementos"><a href="./index.html">Home</a></div>
-        <div class="menu-elementos"><a href="./formulario.html">Formulario</a></div>
-        <div class="menu-elementos"><a href="./curriculum.html">Curriculum</a></div>
-        <div class="menu-elementos"><a href="./sobreelproyecto.html">Video</a></div>
-    </div>
-    <nav>
-        <table>
-            <tr>
-                <td>
-                    <img src="./foto.jpg" alt="200" class="boximg">
-                    <h1 class="nombre">Lucía Calatrava</h1>
-                </td>
-            </tr>
-            <tr class="info">
-                <td>
-                    <p>Estoy estudiando 2º de Sistemas<br> Microinformaticos y Redes en el instituto <br> IES Villablanca que esta situado en Vicalvaro, Madrid. <br> Tengo 19 años y resido en Torrejón de Ardoz, Madrid.
-                    </p>
-                </td>
-            </tr>
-        </table>
-    </nav>
-    <iframe class="video" width="500" height="400" src="https://www.youtube.com/embed/sVSpP1tiFVc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <div class="footer">
-        <div class="menu-elementos"><a href="https://www.instagram.com/?hl=es">Instagram</a></div>
-        <div class="menu-elementos"><a href="https://outlook.live.com/owa/">Hotmail</a></div>
-        <div class="menu-elementos"><a href="https://www.youtube.com/">Youtube</a></div>
-    </div>
+    <!--Encabezado-->
+    <header class="header">
+        <div class="conteiner">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./curriculum.html">Curriculum</a></li>
+                    <li><a href="./formulario.html">Formulario</a></li>
+                    <li><a href="./sobreelproyecto.html">Sobre el proyecto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Cuerpo-->
+    <main class="main">
+        <h1>Explicación técnica del proyecto</h1>
+        <div class="contenedor-video">
+            <iframe src="https://www.youtube.com/watch?v=sVSpP1tiFVc&t=64s" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </main>
+    <!--Pie de página-->
+    <footer>
+        <div class="footer">
+            <div class="container">Contactar: lucia_calatrava@hotmail.com</div>
+            <div class="container">Redes: <a href="https://www.instagram.com/luciicm32/">Instagram </a></div>
+        </div>
+    </footer>
 </body>
 
 </html>
