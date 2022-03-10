@@ -1,0 +1,238 @@
+/* Maquetación */
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #333;
+  font-size: 1.2rem;
+  line-height: 1.6em;
+  margin: 0;
+}
+.container {
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+/* Texto y titulo */
+h1 {
+  font-size: 2rem;
+  line-height: 1.3em;
+}
+
+p {
+  margin-bottom: 1.6em;
+}
+.container-texto {
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+.foro {
+  text-align: center;
+  text-decoration: underline;
+}
+/* Cabeza */
+.header {
+  background: hsl(234, 100%, 27%);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+.header a {
+  color: white;
+  text-decoration: none;
+}
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navigation ul li {
+  display: inline-block;
+}
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  border-radius: 1.5px;
+}
+.navigation ul li a:hover {
+  background: hsl(234, 100%, 27%);
+}
+/* Cuerpo */
+.main {
+  padding-top: 10rem;
+}
+/* Pie de página */
+.footer {
+  background: #f2f2f2;
+  padding: 4rem 0;
+  text-align: center;
+  margin-top: 6rem;
+}
+/* Imagenes */
+img {
+  border-radius: 20px;
+}
+.dibujo {
+  width: 400px;
+  height: 300px;
+}
+.videojuegos {
+  width: 400px;
+  height: 300px;
+}
+/* Maquetación */
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #333;
+  font-size: 1.2rem;
+  line-height: 1.6em;
+  margin: 0;
+}
+.container {
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* Cabeza */
+.header {
+  background: hsl(234, 100%, 27%);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+.header a {
+  color: white;
+  text-decoration: none;
+}
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navigation ul li {
+  display: inline-block;
+}
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  border-radius: 1.5px;
+}
+.navigation ul li a:hover {
+  background:  hsl(234, 100%, 27%);
+}
+/* Cuerpo */
+.main {
+  padding-top: 10rem;
+}
+/* Pie de página */
+.footer {
+  background: #f2f2f2;
+  padding: 4rem 0;
+  text-align: center;
+  margin-top: 6rem;
+}
+/* Curriculum */
+.curriculum-div {
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+.div-tabla {
+  background:  hsl(234, 100%, 27%);
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+.imagen1 {
+  width: 120px;
+  height: 120px;
+}
+img {
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+}
+span {
+  font-weight: bold;
+}
+/* Video */
+video {
+  width: 100%;
+}
+/* Maquetación */
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #333;
+  font-size: 1.2rem;
+  line-height: 1.6em;
+  margin: 0;
+}
+/* Texto y titulo */
+h1 {
+  font-size: 2rem;
+  line-height: 1.3em;
+}
+/* Header */
+.container {
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+.header {
+  background:  hsl(234, 100%, 27%);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+.header a {
+  color: white;
+  text-decoration: none;
+}
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navigation ul li {
+  display: inline-block;
+}
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  border-radius: 1.5px;
+}
+.navigation ul li a:hover {
+  background:  hsl(234, 100%, 27%);
+}
+/* Cuerpo */
+.main {
+  padding-top: 10rem;
+}
+
+/* Para la pagina de formulario */
+.formulario {
+  text-align: center;
+  line-height: 30px;
+}
+/* Pie de pagina */
+.footer {
+  background: #f2f2f2;
+  padding: 4rem 0;
+  text-align: center;
+  margin-top: 6rem;
+}
